@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AltSchool Application Form</title>
+    <style>
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="about_me.html">About Me</a></li>
+                <li><a href="application_form.html">Application Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Application Form</h1>
+        <form action="https://portal.altschoolafrica.com/auth/create-account" method="post">
+
+            <label for="firstName">First Name<span class="required">*</span></label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name<span class="required">*</span></label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="gender">Gender<span class="required">*</span></label>
+            <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth<span class="required">*</span></label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="email">Email Address<span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="education">Education Level<span class="required">*</span></label>
+            <select id="education" name="education" required>
+                <option value="" disabled selected>Select level of education</option>
+            
+            </select>
+
+            <label for="country">Country<span class="required">*</span></label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select your country</option>
+                
+            </select>
+
+            <label for="stateCity">State/City of Residence<span class="required">*</span></label>
+            <input type="text" id="stateCity" name="stateCity" required>
+
+            <label for="employment">Employment Status<span class="required">*</span></label>
+            <select id="employment" name="employment" required>
+                <option value="" disabled selected>Select employment status</option>
+                
+            </select>
+
+            <label for="phone">Phone Number<span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="school">Choose School<span class="required">*</span></label>
+            <select id="school" name="school" required>
+                <option value="" disabled selected>Select school</option>
+                
+            </select>
+
+            <label for="course">Choose Course of Study<span class="required">*</span></label>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>Select course</option>
+                
+            </select>
+
+            <label for="howDidYouHear">How did you hear about us?<span class="required">*</span></label>
+            <select id="howDidYouHear" name="howDidYouHear" required>
+                <option value="" disabled selected>Select channel</option>
+                
+            </select>
+
+            <label for="scholarshipCode">Scholarship/Discount Code (optional)</label>
+            <input type="text" id="scholarshipCode" name="scholarshipCode">
+
+            <label for="agreeTerms">
+                <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+                By clicking continue, I agree to <a href="#">Terms of Use</a> and acknowledge that I have read the <a href="#">Privacy Policy</a>.
+            </label>
+
+            <button type="submit">Proceed</button>
+
+        </form>
+    </section>
+
+    <p>Already have an account? <a href="#">Sign In</a></p>
+
+</body>
+</html>
